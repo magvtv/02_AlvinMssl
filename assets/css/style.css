@@ -17,11 +17,6 @@ body {
 }
 
 
-
-
-
-
-
 /* Header Styling */
 .transparent-header {
 	position: absolute;
@@ -36,14 +31,14 @@ body {
 	background: rgba(0, 0, 0, 0.8);
 }
 
-.navbar {
+.app-navbar {
 	display: flex;
 	justify-content: space-between;
 	padding: 20px;
 	align-items: center;
 }
 
-.mssl-logo img {
+.navbar-logo img {
 	max-width: 60%;
 }
 
@@ -58,17 +53,26 @@ body {
 .navbar-menu {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-end;
+	justify-content: space-between;
+    align-items: center;
 	margin: 0 15px;
 	padding: 10px;
 }
 
 .navbar-menu > a {
 	color: white;
+    font-weight: bold;
+    word-spacing: 0.125rem;
 	font-size: 16px;
 	padding: 0 10px;
 	text-decoration: none;
 	transition: color 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+    }
 }
 
 /* Swiper Slider */
@@ -84,6 +88,8 @@ body {
 }
 
 .slider-caption {
+    max-width: 75%;
+    margin: 0 auto;
 	position: absolute;
 	bottom: 75px;
 	left: 20px;
