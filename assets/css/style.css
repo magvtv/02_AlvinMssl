@@ -7,6 +7,10 @@
     overflow-x: hidden; 
 }
 
+section {
+    margin: 15px auto;
+}
+
 
 body {
 	font-family: Arial, sans-serif;
@@ -113,40 +117,65 @@ body {
 
 /* About and Vision Section */
 .about-vision-section {
-	padding: 60px 0;
+	padding: 30px 0;
 	background-color: #f9f9f9;
 }
 
-.container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	gap: 30px;
-	max-width: 1200px;
-	margin: 0 auto;
-}
 
 .about-card,
 .vision-card {
 	display: flex;
-	flex: 1 1 45%;
+    justify-content: space-between;
+    align-items: center;
+	flex: 1 1 40%;
 	background: linear-gradient(45deg, #ff8c42, #ff616d);
 	border-radius: 10px;
 	overflow: hidden;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-.about-image,
-.vision-image {
-	flex: 1;
-	min-width: 40%;
-	overflow: hidden;
+.about-vision-section > .section-wrapper {
+    /* flex-direction: column; */
+    max-height: 100%;
+    gap: 20px;
 }
+
+.about-card, .vision-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.about-image, 
+.vision-image {
+    flex: 1;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.about-content > h2,
+.vision-content h2 {
+    color: black;
+    font-weight: bold;
+}
+
+.about-content > p,
+.vision-content > p {
+    color: white;
+    width: 100%;
+}
+.about-content button,
+.vision-content button {
+    font-weight: bold;
+}
+
 
 .about-image img,
 .vision-image img {
-	width: 100%;
-	height: 100%;
+	max-width: 100%;
 	object-fit: cover;
 	filter: brightness(0.9);
 }
@@ -154,11 +183,13 @@ body {
 .about-content,
 .vision-content {
 	flex: 1;
-	padding: 20px;
+    width: 100%;
+    margin: 20px 0;
+	padding: 0 10px;
 	color: white;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: flex-start;
 }
 
@@ -186,10 +217,9 @@ body {
 }
 
 .read-more-btn:hover {
-	background-color: #ff8c42;
+	background-color: #b80c0c;
 }
 
-/* Media Queries for responsiveness */
 @media (max-width: 768px) {
 	.container {
 		flex-direction: column;
@@ -205,17 +235,24 @@ body {
 	.vision-image {
 		width: 100%;
 	}
+
+    .about-vision-section > .section-wrapper {
+        flex-direction: column;
+    }
 }
 
 /* Services Section */
 .services-section-s2 {
-	padding: 60px 0;
+    position: relative;
+    width: 100%;
+	padding: 30px 0;
 	background-color: #f9f9f9;
 }
 
-.section-title {
+.service-title {
 	text-align: center;
-	margin-bottom: 40px;
+	margin: 20px 0 0 20px;
+    padding: 10px;
 }
 
 .services-grids {
@@ -261,7 +298,7 @@ body {
 p {
 	font-size: 1rem;
 	line-height: 1.6;
-	color: #555;
+	color: #a3a2a2;
 }
 
 .more a {
@@ -279,20 +316,30 @@ p {
 	display: inline-block;
 	background-color: #ff6347;
 	color: white;
+    margin: 25px 0 0 30px;
 	padding: 10px 20px;
 	border-radius: 5px;
 	text-decoration: none;
 	transition: background-color 0.3s ease;
-	margin-top: 30px;
 }
 
 .see-more-btn:hover {
 	background-color: #ff4500;
 }
 
-/* General styles for the request form */
+
+@media screen and (max-width: 600px) {
+    .services-section-s2 > .section-wrapper {
+        padding: 0;
+    }
+}
+
+/* REQUEST FORM*/
 .request-section {
-	padding: 50px 0;
+    max-width: 75%;
+    position: relative;
+    margin: 0 auto;
+	padding: 15px;
 	background-color: #f9f9f9;
 	text-align: center;
 }
@@ -301,6 +348,16 @@ p {
 	font-size: 2.5rem;
 	margin-bottom: 30px;
 	color: #333;
+}
+
+.request-form {
+    width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    .request-section {
+        max-width: 90%;
+    }
 }
 
 /* Styling for the container holding the form */
@@ -317,7 +374,7 @@ p {
 .request-section .form-control {
 	width: 100%;
 	padding: 15px;
-	font-size: 1rem;
+	font-size: 1.25rem;
 	border: 1px solid #ddd;
 	border-radius: 5px;
 	margin-bottom: 20px;
@@ -374,17 +431,17 @@ p {
     height: 100%;
 }
 
-.slider-wrapper {
+.section-wrapper {
     display: flex;
     flex-wrap: wrap;
     place-items: center;
-    width: 100%;
+    padding: 10px 20px;
+    /* width: 100%; */
     margin: 0 auto;
 }
 
 .customer-logos > .slide img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 75%;
 }
 
 @media screen and (max-width: 400px) {
@@ -396,7 +453,6 @@ p {
         height: 100px;
     }
 }
-
 
 
 /* RESPONSIVE DESIGN */
@@ -423,7 +479,6 @@ p {
 /* partner slider */
 h2 {
 	text-align: center;
-	padding: 20px;
 }
 /* Slider */
 

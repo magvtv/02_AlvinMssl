@@ -68,15 +68,22 @@
 
     <!-- About Section -->
     <section class="about-vision-section">
-        <div class="container">
+        <div class="section-wrapper">
             <div class="about-card">
                 <div class="about-image">
                     <img src="assets/images/about.jpg" alt="About Us">
                 </div>
                 <div class="about-content">
-                    <h2>About Us</h2>
-                    <p>MachineTech Solutions & Services provides high-end technology and support for agricultural and industrial sectors. Established in 2018, we aim to ensure efficient and reliable equipment solutions across the region.</p>
-                    <button class="read-more-btn" onclick="toggleReadMore()">Read More</button>
+                    <h2>
+                        About Us
+                    </h2>
+                    <p>
+                        MachineTech Solutions & Services provides high-end technology and support for agricultural and industrial sectors. 
+                        Established in 2018, we aim to ensure efficient and reliable equipment solutions across the region.
+                    </p>
+                    <button class="read-more-btn" onclick="toggleReadMore()">
+                        Read More
+                    </button>
                 </div>
             </div>
     
@@ -97,13 +104,11 @@
     <!-- Services Section -->
     <!-- Start Services Section -->
     <section class="services-section-s2 section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1">
-                    <div class="section-title">
-                        <h2>Services Offered</h2>
-                    </div>
-                </div>
+        <div class="section-wrapper">
+            <div class="service-title">
+                <h2>
+                    Services Offered
+                </h2>
             </div>
             
             <div class="row">
@@ -173,11 +178,11 @@
 
     <!-- Request Section -->
     <section class="request-section">
-        <div class="container">
+        <div class="">
             <h2>
                 Request a Quote
             </h2>
-            <div class="col-md-12 pr-md-5">
+            <div class="request-form col-md-12 pr-md-5">
                 <form onsubmit="onSubmit(event)">
                     <div class="form-group">
                         <input name="name" type="text" class="form-control" placeholder="Your Name" required>
@@ -192,8 +197,8 @@
                         <input name="subject" type="text" class="form-control" placeholder="Subject*" required>
                     </div>
                     <div class="form-group">
-                        <label for="services">Select Service</label>
-                        <select id="services" name="services" class="form-control" required>
+                        <!-- <label for="services">Select Service</label> -->
+                        <select id="services" name="services" class="form-control" aria-placeholder="Select Service" required>
                             <option value="generator">Generator Sales</option>
                             <option value="tractor">Tractors Maintenance</option>
                             <option value="parts">Part Sales</option>
@@ -209,28 +214,11 @@
             </div>
         </div>
     </section>
-    
-
-    <!-- Additional Slider (same style) -->
-    <!-- <section class="additional-slider">
-        <div class="swiper-container additional-swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image: url('assets/images/slider/farm2.jpg');"></div>
-                <div class="swiper-slide" style="background-image: url('assets/images/slider/combine2.jpg');"></div>
-                <div class="swiper-slide" style="background-image: url('assets/images/slider/GEN2.jpg');"></div>
-            </div>-->
-            <!-- Pagination & Navigation -->
-            <!-- <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-    </section> --> 
-
 
 
     <!--Partner slider-->
-    <section class = "slider-partner">
-        <div class="slider-wrapper">
+    <section class="slider-partner">
+        <div class="section-wrapper">
             <h2>Our Partners</h2>
             <section class="customer-logos">
                 <div class="slide">
@@ -262,18 +250,18 @@
     <footer>
         <div class="row">
             <div class="col-md-12 text-center">
-
-              <p>Copyright &copy;
+            <p>
+                Copyright &copy;
                 <script>document.write(new Date().getFullYear());</script> All rights reserved</a>
-              </p>
+            </p>
             </div>
-          </div>
+        </div>
 
     </footer>
 
     <!-- Swiper JS for Slider -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- pARTNER -->
+    <!-- Partner -->
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
