@@ -193,7 +193,7 @@ img {
 
 .nav__link {
     color: var(--text-color-light);
-    font-size: var(--font-semi-bold);
+    font-size: 600;
     transition: color 400ms;
     text-transform: capitalize;
     text-decoration: none;
@@ -437,7 +437,8 @@ img {
 }
 
 .services__card {
-    width: 480px;
+    width: 400px;
+    padding: 0 4rem;
     background-color: var(--container-color);
     border: 2px solid var(--gray-border);
     padding: 2rem 1rem 3.5rem;
@@ -461,20 +462,61 @@ img {
 
 .services__title {
     font-size: var(--h2-font-size);
-    margin: 0 0 0.5rem 0;
+    margin: 1rem 0;
     text-transform: capitalize;
 }
 
+.services__shape {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    background-color: var(--black-color);
+    left: 0;
+    bottom: 0;
 
+}
 
 
 /* Swiper class */
+.swiper {
+    margin-inline: initial;
+    padding: 0 0 4rem 0
+}
 
-/*=============== PROJECTS ===============*/
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    content: '';
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    top: initial;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    background-color: var(--container-color);
+    box-shadow: 0 2px 8px hsla(255, 8%, 4%, 0.1);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: var(--title-color);
+}
+
+
+.swiper-button-prev {
+    left: calc(50% - 5rem)
+}
+
+.swiper-button-next {
+    right: calc(50% - 5rem)
+}
 
 /*=============== CONTACT ===============*/
 
 /*=============== FOOTER ===============*/
+
+.footer__title, .footer__link {
+    text-transform: capitalize;
+}
 
 /*=============== SCROLL BAR ===============*/
 
