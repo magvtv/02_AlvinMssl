@@ -292,7 +292,97 @@
             </section>
 
 			<!--==================== CONTACT ====================-->
-			<section class="contact section" id="contact"></section>
+			<section class="contact section" id="contact">
+                <div class="container">
+                    <span class="section__subtitle">
+                        get a quote
+                    </span>
+
+                    <h2 class="section__title">
+                        start your journey to agricultural success
+                    </h2>
+
+                    <div class="contact__container grid">
+                        <img src="/Revamp/assets/img/contact-img.png" alt="contact" class="contact__img">
+
+
+                        <div class="contact__form">
+                            <div class="contact__card">
+                                <div class="contact__icon"></div>
+                                <h3 class="contact__title">
+
+                                </h3>
+                                <address class="contact__info">
+
+                                </address>
+                            </div>
+
+                            <div class="contact__card">
+                                <div class="contact__icon"></div>
+                                <h3 class="contact__title">
+
+                                </h3>
+                                <address class="contact__info">
+                                    
+                                </address>
+                            </div>
+
+                            <div class="contact__card"> 
+                                <form action="/submit" method="POST">
+                                    <label for="name">
+                                        full name:
+                                    </label>
+                                    <input class="contact__data" id="client-name" type="text" placeholder="Susan Smith" required>
+
+                                    <label for="email">
+                                        email address (optional)
+                                    </label>
+                                    <input type="email" class="contact__data" id="client-email" placeholder="susansmith@gmail.com" >
+
+                                    <label for="phone">
+                                        mobile number
+                                    </label>
+                                    <input type="tel" class="contact__data" id="client-mobile" placeholder="+254712345678" required>
+
+                                    <label for="subject">
+                                        subject (optional)
+                                    </label>
+                                    <select name="subject" id="quote-subject">
+                                        <option value="" disabled selected>
+                                            Select a service
+                                        </option>
+                                        <option value="generatorSales">
+                                            Sales of Generators
+                                        </option>
+                                        <option value="tractorMaintenance">
+                                            Tractor and Combine Maintenance & Repair
+                                        </option>
+                                        <option value="machineryParts">
+                                            Sales of Machinery Parts
+                                        </option>
+                                        <option value="fireEngineMaintenance">
+                                            Fire Engines Maintenance & Repair
+                                        </option>
+                                        <option value="plantMaintenance">
+                                            General Plant Maintenance
+                                        </option>
+                                        <option value="consultancySupplies">
+                                            General Agriculture Consultancy & Supplies
+                                        </option>
+                                    </select>
+
+                                    <label for="message">Message:</label>
+                                    <textarea id="message" name="client_message" placeholder="Write your message here" required></textarea>
+
+                                    <div type="submit" class=" contact__button button">
+                                        Request a Quote
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 		</main>
 
 		<!--==================== FOOTER ====================-->
@@ -358,6 +448,14 @@
                                     Nairobi, Kenya
                                 </address>
                             </li>
+
+                            <li>
+                                <address class="footer__info">
+                                    Call us
+                                    <br>
+                                    0726911552, 0722618613
+                                </address>
+                            </li>
     
                             <li>
                                 <address class="footer__info">
@@ -400,9 +498,9 @@
 		<script src=""></script>
 
 		<!--=============== SWIPER JS ===============-->
-		<script src="/assets/js/swiper-bundle.min.js"></script>
+		<script src="/Revamp/assets/js/swiper-bundle.min.js"></script>
 
 		<!--=============== MAIN JS ===============-->
-		<script src="/assets/js/main.js"></script>
+		<script src="/Revamp/assets/js/main.js"></script>
 	</body>
 </html>
